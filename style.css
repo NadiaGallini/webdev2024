@@ -73,6 +73,7 @@
     padding: 15px 5px;
     color: #BCBCC2;
     margin-bottom: 5px;
+
 }
 
 /*main*/
@@ -101,7 +102,11 @@
     background-color: #A9A9FD;
     color: white;
     border-radius: 8px;
-    padding: 12px;
+    padding: 16px;
+    white-space: nowrap;
+    float: left;
+    height: 100%;
+    margin-left: 16px;
 }
 
 .main-text2 {
@@ -109,8 +114,12 @@
     background-color: #F1A9FD;
     color: white;
     border-radius: 8px;
-    padding: 12px;
+    padding: 16px;
     white-space: nowrap;
+    float: left;
+    height: 100%;
+    margin: 0 auto;
+    margin-left: 8px;
 }
 
 .main-list>p.g {
@@ -119,7 +128,10 @@
 }
 
 .info {
-    padding-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+
 }
 
 /* skills, lan*/
@@ -139,6 +151,10 @@ span {
     padding: 12px;
     border-radius: 8px;
     background-color: #F5F5FA;
+    white-space: nowrap;
+    float: left;
+    height: 100%;
+    margin-left: 16px;
 }
 
 .img-circle {
@@ -154,6 +170,11 @@ span {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.carousel .img-circle img {
+    max-height: 768px;
+    min-width: auto;
 }
 
 a {
@@ -242,13 +263,72 @@ a:not([href]):not([class]):hover {
         position: relative;
     }
 
+
+
     .img-circle {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         overflow: hidden;
         position: relative;
         z-index: 1000;
     }
+}
 
+h1 {
+    margin-bottom: 24px;
+}
+
+h2 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-top: 12px;
+}
+
+#box {
+    width: 100%;
+    height: 100%;
+    /* background: green; */
+    position: relative;
+    /* border: 10px solid blue; */
+    left: 50px;
+    top: 50px;
+}
+
+#box:before {
+    background: #fff;
+    content: 'border';
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+#box:after {
+    background: #fff;
+    content: 'margin';
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    z-index: -2;
+}
+
+.content {
+    float: left;
+    height: 100%;
+}
+
+.cl {
+    clear: both;
 }
